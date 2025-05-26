@@ -3,43 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Разработчика</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключите ваш CSS файл -->
+    <title>Резюме | Данил Мингазов</title>
     <style>
+        :root {
+            --bg-color: #f9f9f9;
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 0 20px 40px;
         }
+
         header {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #333;
+            background: var(--primary-color);
             color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
         }
-        h1 {
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
             margin: 0;
+            font-size: 1.2em;
+            font-weight: 300;
         }
+
         section {
-            background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: var(--card-bg);
+            margin: 20px auto;
+            padding: 25px;
+            max-width: 900px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
         }
+
         h2 {
-            color: #333;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: var(--primary-color);
         }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .skills, .experience, .education {
+
+        ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
-        .skills li, .experience li, .education li {
+
+        li {
             margin-bottom: 10px;
+        }
+
+        .contact-info p, .contact-info a {
+            margin: 5px 0;
+            font-size: 1em;
+            display: block;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -51,8 +102,9 @@
 </header>
 
 <section class="contact-info">
-    <h2>https://t.me/OneCommasClub</h2>
-    <p>Email: mingazov-danil@list.ru</p>
+    <h2>Контакты</h2>
+    <p>Telegram: <a href="https://t.me/OneCommasClub" target="_blank">@OneCommasClub</a></p>
+    <p>Email: <a href="mailto:mingazov-danil@list.ru">mingazov-danil@list.ru</a></p>
     <p>Телефон: +7 (917) 497-42-50</p>
     <p>GitHub: <a href="https://github.com/ваш_пользователь" target="_blank">github.com/ваш_пользователь</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/ваш_профиль" target="_blank">linkedin.com/in/ваш_профиль</a></p>
@@ -72,20 +124,25 @@
 <section class="experience">
     <h2>Опыт работы</h2>
     <ul>
-        <li><strong>Компания A</strong> — Разработчик (2020 - настоящее время)</li>
-        <li><strong>Компания B</strong> — Младший разработчик (2018 - 2020)</li>
+        <li><strong>Логистическая компания</strong> — Специалист по логистике (2020 – настоящее время)</li>
+        <li><strong>Компания B</strong> — Младший разработчик (2018 – 2020)</li>
     </ul>
 </section>
 
 <section class="education">
     <h2>Образование</h2>
     <ul>
-        <li><strong>Университет A</strong> — Бакалавр в области информатики (2014 - 2018)</li>
+        <li><strong>Университет A</strong> — Бакалавр в области информатики (2014 – 2018)</li>
     </ul>
 </section>
 
-<footer style="text-align:center; margin-top:20px;">
-    <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+<section class="about">
+    <h2>О себе</h2>
+    <p>Меня зовут Данил, мне 23 года, живу в Уфе. Уже более трёх лет работаю в логистической компании, где приобрёл ценные навыки работы в команде и управления процессами. В свободное время активно изучаю криптовалюту, интересуюсь блокчейн-технологиями и новыми цифровыми трендами. Открыт к новым вызовам и стремлюсь развиваться в сфере IT.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Данил Мингазов. Все права защищены.</p>
 </footer>
 
 </body>
